@@ -12,7 +12,7 @@ include("auth.php");
 <body>
 <div class="form">
 <p>Dashboard</p>
-<p>This is another secured page.</p>
+<p>This is a Secured Page.</p>
 <p><a href="index.php">Home</a></p>
 <a href="logout.php">Logout</a>
 </div>

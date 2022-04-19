@@ -27,12 +27,12 @@ if (isset($_REQUEST['username'])){
 	$password = stripslashes($_REQUEST['password']);
 	$password = mysqli_real_escape_string($con,$password);
 	$trn_date = date("Y-m-d H:i:s");
-        $query = "INSERT into `users` (cedula, username,fecha_nacimiento, telefono, email, direccion, password, trn_date)
+        $query = "INSERT into `users` (cedula, username, fecha_nacimiento, telefono, email, direccion, password, trn_date)
 VALUES ('$cedula', '$username', '$fecha_nacimiento', '$telefono', '$email', '$direccion', '".md5($password)."', '$trn_date')";
         $result = mysqli_query($con,$query);
         if($result){
             echo "<div class='form'>
-<h3>You are registered successfully.</h3>
+<h3>Registro de Usuario Satisfactorio!!!.</h3>
 <br/>Click here to <a href='login.php'>Login</a></div>";
         }
     }else{
